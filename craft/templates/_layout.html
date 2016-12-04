@@ -53,7 +53,10 @@
 
 			<nav>
 				<ul>
-					<li><a href="{{ url('news') }}" {% if craft.request.firstSegment == 'news' %}class="active"{% endif %}>News</a></li>
+					<li><a href="{{ url('/') }}" >Home</a></li>
+					<li><a href="{{ url('about') }}" >About</a></li>
+					<li><a href="{{ url('news') }}" >Projects</a></li>
+					<li><a href="{{ url('resume') }}" >Resume</a></li>
 				</ul>
 			</nav>
 		</header>
