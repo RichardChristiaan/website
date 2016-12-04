@@ -8,5 +8,5 @@
  */
 
 return array(
-
+	'omitScriptNameInUrls' => true,
 );

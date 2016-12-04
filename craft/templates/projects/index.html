@@ -11,12 +11,12 @@
  #}
 
 {% extends "_layout" %}
-{% set title = "News" %}
+{% set title = "Projects" %}
 
 {% block content %}
-	<h1>News</h1>
+	<h1>{{title}}</h1>
 
-	{% for entry in craft.entries.section('news').find() %}
+	{% for entry in craft.entries.section('projects').find() %}
 		<article>
 			<h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
 			<p>Posted on {{ entry.postDate.format('F d, Y') }}</p>
